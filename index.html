@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <span class="header__menu-top"></span>
+        <div class="header__menu">
+            <img class="header__menu-img" srcset="./image/logo.png 2x" alt="">
+
+            <!-- <div class="header__menu-desk">
+                <a href="#">
+                    <img srcset="./image/menu-icon-1.png 2x" alt="">
+                    <span>Sản phẩm</span>
+                </a>
+                <a href="#">
+                    <img srcset="./image/icon-food.png 2x" alt="">
+                    <span>Ăn uống</span>
+                </a>
+                <a href="#">
+                    <img srcset="./image/icon-sell-off.png 2x" alt="">
+                    <span>Ưu đãi</span>
+                </a>
+                <a href="#">
+                    <img srcset="./image/menu-icon-3.png 2x" alt="">
+                    <span>Tìm cửa hàng</span>
+                </a>
+                <a href="#">
+                    <img srcset="./image/icon-job.png 2x" alt="">
+                    <span>Việc làm</span>
+                </a>
+            </div> -->
+
+            <div class="header__menu-bars">
+                <a href="#">
+                    <img srcset="./image/menu-icon-1.png 2x" alt="">
+                    <span>Trang chủ</span>
+                </a>
+                <a href="#">
+                    <img srcset="./image/menu-icon-2.png 2x" alt="">
+                    <span>Sản phẩm</span>
+                </a>
+                <a href="#" class="header__menu-bars--user">
+                    <img srcset="./image/user-1.png 2x" alt="">
+                    <span>Tài khoản</span>
+                </a>
+                <a href="#">
+                    <img srcset="./image/menu-icon-3.png 2x" alt="">
+                    <span>Tìm cửa hàng</span>
+                </a>
+                <a href="#">
+                    <img srcset="./image/menu-icon-4.png 2x" alt="">
+                    <span>Thêm</span>
+                </a>
+            </div>
+
+            <form class="header__menu-form" action="">
+                <input type="search" placeholder="Địa chỉ nhận hàng" />
+                <a href="#"><img srcset="./image/icon.png 2x" alt=""></a>
+            </form>
+
+            <div class="header__menu-shop">
+                <a href="#">
+                    <img srcset="./image/icon-search.png 2x" alt="" class="header__menu-search">
+                </a>
+                <!-- <a href="">
+                    <img src="./image/user-desk-menu.png" alt="">
+                </a> -->
+                <a href="#">
+                    <img srcset="./image/cart.png 2x" alt="" class="header__menu-cart">
+                    <span>0</span>
+                </a>
+            </div>
+
+            <!-- <div class="header__menu-language">
+                <button>VI</button>
+                <button>EN</button>
+            </div> -->
+        </div>
+    </header>
+
+    <span class="space"></span>
+
+    <section class="banner">
+        <img srcset="./image/banner.png 2x" alt="">
+    </section>
+
+    <ul class="category">
+        <li class="category__list active">
+            <label for="">
+                <img srcset="./image/category-icon-sell-off.png 2x" alt="">
+            </label>
+            <a href="#">Hàng khuyến mãi</a>
+        </li>
+        <li class="category__list">
+            <label for="">
+                <img srcset="./image/category-icon-2.png 2x" alt="">
+            </label>
+            <a href="#">Hàng khuyến mãi</a>
+        </li>
+        <li class="category__list">
+            <label for="">
+                <img srcset="./image/category-icon-3.png 2x" alt="">
+            </label>
+            <a href="#">Hàng khuyến mãi</a>
+        </li>
+        <li class="category__list">
+            <label for="">
+                <img srcset="./image/category-icon-4.png 2x" alt="">
+            </label>
+            <a href="#">Hàng khuyến mãi</a>
+        </li>
+        <li class="category__list">
+            <label for="">
+                <img srcset="./image/category-icon-5.png 2x" alt="">
+            </label>
+            <a href="#">Hàng khuyến mãi</a>
+        </li>
+        <li class="category__list">
+            <label for="">
+                <img srcset="./image/category-icon-6.png 2x" alt="">
+            </label>
+            <a href="#">Hàng khuyến mãi</a>
+        </li>
+        <li class="category__list">
+            <label for="">
+                <img srcset="./image/category-icon-7.png 2x" alt="">
+            </label>
+            <a href="#">Hàng khuyến mãi</a>
+        </li>
+        <li class="category__list">
+            <label for="">
+                <img srcset="./image/category-icon-8.png 2x" alt="">
+            </label>
+            <a href="#">Hàng khuyến mãi</a>
+        </li>
+
+    </ul>
+
+    <section class="product">
+        <div class="product__heading">
+            <h2 class="product__heading-text">SẢN PHẨM MỚI</h2>
+            <span></span>
+        </div>
+
+        <div class="swiper product__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide product__slider-box">
+                    <img srcset="./image/product-3.png 2x" alt="">
+                    <a href="#">
+                        Mỳ trộn xúc xinh trứng chiên
+                        <span>23.000Đ</span>
+                    </a>
+                </div>
+                <div class="swiper-slide product__slider-box">
+                    <img srcset="./image/product-4.png 2x" alt="">
+                    <a href="#">
+                        Mỳ trộn xúc xinh trứng chiên
+                        <span>23.000Đ</span>
+                    </a>
+                </div>
+                <div class="swiper-slide product__slider-box">
+                    <img srcset="./image/product-3.png 2x" alt="">
+                    <a href="#">
+                        Mỳ trộn xúc xinh trứng chiên
+                        <span>23.000Đ</span>
+                    </a>
+                </div>
+                <div class="swiper-slide product__slider-box">
+                    <img srcset="./image/product-4.png 2x" alt="">
+                    <a href="#">
+                        Mỳ trộn xúc xinh trứng chiên
+                        <span>23.000Đ</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper product__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide product__slider-box">
+                    <img srcset="./image/product-5.png 2x" alt="">
+                    <a href="#">
+                        Mỳ trộn xúc xinh trứng chiên
+                        <span>23.000Đ</span>
+                    </a>
+                </div>
+                <div class="swiper-slide product__slider-box">
+                    <img srcset="./image/product-6.png 2x" alt="">
+                    <a href="#">
+                        Mỳ trộn xúc xinh trứng chiên
+                        <span>23.000Đ</span>
+                    </a>
+                </div>
+                <div class="swiper-slide product__slider-box">
+                    <img srcset="./image/product-7.png 2x" alt="">
+                    <a href="#">
+                        Mỳ trộn xúc xinh trứng chiên
+                        <span>23.000Đ</span>
+                    </a>
+                </div>
+                <div class="swiper-slide product__slider-box">
+                    <img srcset="./image/product-3.png 2x" alt="">
+                    <a href="#">
+                        Mỳ trộn xúc xinh trứng chiên
+                        <span>23.000Đ</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

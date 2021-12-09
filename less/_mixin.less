@@ -1,0 +1,23 @@
+.flex(@align: flex-start, @justify: flex-start, @wrap: nowrap,@dir: row) {
+  display: flex;
+  align-items: @align;
+  justify-content: @justify;
+  flex-wrap: @wrap;
+  flex-direction: @dir;
+}
+
+.grid(@width, @fraction, @gap-width) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(@width, @fraction));
+  gap: @gap-width;
+}
+
+.boder-radius(@pixel) {
+  border-radius: @pixel;
+}
+
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+  -moz-box-shadow: @shadow;
+  box-shadow: @shadow;
+}
