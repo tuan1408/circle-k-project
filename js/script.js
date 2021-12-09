@@ -34,10 +34,10 @@ var swiper = new Swiper(".service__slider", {
   loop: true,
   grabCursor: true,
   centeredSlides: true,
-  // autoplay: {
-  //   delay: 8500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 8500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     0: {
       slidesPerView: 2,
@@ -47,6 +47,29 @@ var swiper = new Swiper(".service__slider", {
     },
     991: {
       slidesPerView: 4,
+    },
+  },
+});
+
+var swiper = new Swiper(".news__slider", {
+  spaceBetween: 20,
+
+  loop: true,
+  grabCursor: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 8500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    450: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
     },
   },
 });
