@@ -19,3 +19,34 @@ var swiper = new Swiper(".product__slider", {
     },
   },
 });
+
+var swiper = new Swiper(".sub-slider", {
+  loop: true,
+  grabCursor: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 8500,
+    disableOnInteraction: false,
+  },
+});
+
+var swiper = new Swiper(".service__slider", {
+  loop: true,
+  grabCursor: true,
+  centeredSlides: true,
+  // autoplay: {
+  //   delay: 8500,
+  //   disableOnInteraction: false,
+  // },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    450: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidesPerView: 4,
+    },
+  },
+});

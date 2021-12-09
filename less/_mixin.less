@@ -21,3 +21,27 @@
   -moz-box-shadow: @shadow;
   box-shadow: @shadow;
 }
+
+.btn(@color, @background-color) {
+  background-color: @background-color;
+  padding: 10px 30px;
+  display: inline-block;
+  text-align: center;
+
+  color: @color;
+  font-size: @font-size__m;
+  font-weight: @font-weight__semibold;
+  line-height: @line-height__m;
+  cursor: pointer;
+
+  // &:hover {
+  //   cursor: pointer;
+  //   opacity: 0.8;
+  //   background-color: @background__color-hover;
+  //   color: @text__color-hover;
+  // }
+}
+
+.btn-default {
+  .btn(@color-theme__base, @color-white);
+}

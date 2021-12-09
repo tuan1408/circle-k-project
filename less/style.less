@@ -22,7 +22,7 @@ body {
   font-size: @font-size__base;
   font-weight: @font-weight__base;
   line-height: @line-height__base;
-  height: 2000px;
+  height: 5000px;
 }
 
 html {
@@ -142,63 +142,6 @@ header {
       }
     }
   }
-
-  // @media (min-width: 480px) {
-  //   .header__menu {
-  //     &-bars {
-  //       padding: 0 30px;
-  //     }
-  //   }
-  // }
-
-  // @media (min-width: 768px) {
-  //   .header__menu {
-  //     &-desk {
-  //       display: none;
-  //     }
-  //   }
-  // }
-
-  // @media (min-width: 1024px) {
-  //   .header__menu {
-  //     &-main {
-  //       flex: 1;
-  //       .flex(center, space-between);
-  //     }
-
-  //     &-bars {
-  //       display: none;
-  //     }
-
-  //     &-desk {
-  //       .flex(center, space-between);
-
-  //       a {
-  //         background-color: @color-theme__base;
-  //         width: 70px;
-  //         height: 70px;
-  //         border-radius: 50%;
-
-  //         position: relative;
-  //         margin: unset;
-  //         bottom: 10px;
-
-  //         img {
-  //           margin: 11px auto 6px;
-  //         }
-
-  //         span {
-  //           padding-bottom: 10px;
-  //           color: @color-white;
-  //           display: block;
-  //           color: @color-text__gray;
-  //           font-size: 9px;
-  //           font-weight: @font-weight__semibold;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
 }
 
 .space {
@@ -264,45 +207,35 @@ header {
   }
 }
 
-.product {
-  &__heading {
-    text-align: center;
-    &-text {
-      text-align: center;
-      font-weight: @font-weight__semibold;
-      font-size: @font-size__m;
-      line-height: @line-height__xl;
+.heading {
+  text-align: center;
 
-      display: inline-block;
-      position: relative;
-      padding-bottom: 8px;
-      border-bottom: 3px solid @color-theme__base;
+  h2 {
+    font-weight: @font-weight__semibold;
+    font-size: @font-size__m;
+    line-height: @line-height__xl;
 
-      // &::before {
-      //   content: "";
-      //   position: absolute;
-      //   width: 100px;
-      //   height: 10px;
-      //   color: red;
-      //   top: 0;
-      //   left: 0;
-      //   background: red;
-      // }
-    }
-
-    span {
-      position: absolute;
-      margin: 0 20px;
-      width: 100%;
-      height: 0px;
-
-      display: block;
-      border: 0.5px solid @color-yellow;
-    }
+    position: relative;
+    padding-bottom: 8px;
+    display: inline-block;
+    border-bottom: 3px solid @color-theme__base;
   }
 
+  span {
+    margin: 0 20px;
+    height: 0px;
+
+    display: block;
+    border: 0.5px solid @color-yellow;
+  }
+}
+
+.product {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
   &__slider {
-    overflow: unset;
+    overflow: hidden;
     text-align: center;
     margin-bottom: 20px;
 
@@ -330,6 +263,90 @@ header {
           margin-top: 12px;
         }
       }
+    }
+  }
+}
+
+.more {
+  color: @color-theme__base;
+  .btn-default;
+  border: 1px solid @color-theme__base;
+
+  position: relative;
+  .boder-radius(20px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  img {
+    position: absolute;
+    width: 9px;
+    height: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+  }
+}
+
+.sub-slider {
+  &__box {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.service {
+  background: @color-gray-light;
+  padding-top: 20px;
+  &__slider {
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  &__more {
+    margin: 20px 0;
+  }
+
+  &__list {
+    .flex(center, center, wrap, column);
+    gap: 8px;
+    &.active {
+      label {
+        background-color: @color-theme__base;
+        img {
+          color: @color-white;
+        }
+      }
+      a {
+        color: @color-theme__base;
+        font-weight: @font-weight__semibold;
+        letter-spacing: 0.05px;
+      }
+    }
+
+    label {
+      width: 60px;
+      height: 60px;
+      display: block;
+      margin: 0 auto;
+
+      position: relative;
+      .box-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+      background-color: @color-white;
+      .boder-radius(50%);
+
+      img {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        top: 20%;
+      }
+    }
+    a {
+      font-weight: @font-weight__heavier;
+      color: @color-text__gray;
     }
   }
 }
