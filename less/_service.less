@@ -1,0 +1,40 @@
+.service {
+  background: @color-gray-light;
+  padding-top: 20px;
+
+  &__heading {
+    .heading-text();
+  }
+
+  &__slider {
+    padding-top: 30px;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  &__more {
+    margin: 20px 0;
+    .see-more-extra();
+  }
+
+  &__list {
+    .flex(center, center, wrap, column);
+    gap: 8px;
+    &.active {
+      label {
+        .item-active;
+      }
+      a {
+        .text-active();
+      }
+    }
+
+    label {
+      .item-default();
+      .box-shadow-default();
+    }
+    a {
+      .text-default();
+    }
+  }
+}

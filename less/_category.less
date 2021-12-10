@@ -1,0 +1,35 @@
+.category {
+  margin: 20px 20px 30px;
+  text-align: center;
+  .grid(60px, 1fr, 20px);
+  list-style: none;
+
+  &__list {
+    .flex(center, center, wrap, column);
+    gap: 8px;
+    &.active {
+      label {
+        background-color: @color-theme__base;
+        img {
+          color: @color-white;
+        }
+      }
+      a {
+        .text-active;
+      }
+      &:last-child {
+        label {
+          background-color: @color-white;
+        }
+      }
+    }
+
+    label {
+      .item-default;
+      .box-shadow-default();
+    }
+    a {
+      .text-default;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.product {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  &__heading {
+    .heading-text();
+  }
+
+  &__slider {
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        min-height: 160px;
+        min-width: 170px;
+        object-fit: cover;
+      }
+
+      a {
+        font-weight: @font-weight__semibold;
+        font-size: @font-size__s;
+        color: @color-text__black;
+        display: block;
+        margin-top: 12px;
+
+        span {
+          color: @color-theme__base;
+          display: block;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+
+  &__more {
+    .see-more();
+  }
+}

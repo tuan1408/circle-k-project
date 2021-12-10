@@ -1,0 +1,52 @@
+.club {
+  position: fixed;
+  left: 20px;
+  bottom: 84px;
+  z-index: 100;
+
+  .boder-radius(5px);
+  .box-shadow(0px 0px 10px rgb(0 0 0 / 15%));
+  text-align: center;
+  background: @color-white;
+
+  img {
+    width: 100%;
+  }
+
+  span {
+    color: @color-theme__base;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: @font-weight__bold;
+
+    display: inline-block;
+  }
+}
+
+.quick__email,
+.quick__phone {
+  position: fixed;
+  right: 20px;
+  z-index: 100;
+  background: @color-yellow;
+
+  .boder-radius(50%);
+  color: @color-white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+
+  img {
+    padding: 10px;
+
+    object-fit: cover;
+  }
+}
+
+.quick__email {
+  bottom: 80px;
+}
+
+.quick__phone {
+  bottom: 136px;
+}

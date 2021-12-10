@@ -1,7 +1,7 @@
 var swiper = new Swiper(".product__slider", {
   loop: true,
   grabCursor: true,
-  centeredSlides: true,
+  // centeredSlides: true,
   autoplay: {
     delay: 8500,
     disableOnInteraction: false,
@@ -10,7 +10,7 @@ var swiper = new Swiper(".product__slider", {
     0: {
       slidesPerView: 1,
     },
-    768: {
+    414: {
       slidesPerView: 2,
     },
     991: {
@@ -40,22 +40,26 @@ var swiper = new Swiper(".sub-slider", {
 });
 
 var swiper = new Swiper(".service__slider", {
+  initialSlide: 0,
+
   loop: true,
   grabCursor: true,
-  centeredSlides: true,
   autoplay: {
     delay: 8500,
     disableOnInteraction: false,
   },
   breakpoints: {
     0: {
-      slidesPerView: 4,
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
-    450: {
-      slidesPerView: 5,
+    414: {
+      slidesPerView: 4,
+      spaceBetween: 20,
     },
     991: {
-      slidesPerView: 6,
+      slidesPerView: 5,
+      spaceBetween: 20,
     },
   },
 });
@@ -65,7 +69,7 @@ var swiper = new Swiper(".news__slider", {
 
   loop: true,
   grabCursor: true,
-  centeredSlides: true,
+  // centeredSlides: true,
   autoplay: {
     delay: 8500,
     disableOnInteraction: false,
@@ -74,7 +78,7 @@ var swiper = new Swiper(".news__slider", {
     0: {
       slidesPerView: 1,
     },
-    450: {
+    414: {
       slidesPerView: 2,
     },
     991: {
