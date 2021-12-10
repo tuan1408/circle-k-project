@@ -1,5 +1,4 @@
 var swiper = new Swiper(".product__slider", {
-  spaceBetween: 20,
   loop: true,
   grabCursor: true,
   centeredSlides: true,
@@ -17,6 +16,16 @@ var swiper = new Swiper(".product__slider", {
     991: {
       slidesPerView: 3,
     },
+  },
+});
+
+var swiper = new Swiper(".banner", {
+  loop: true,
+  grabCursor: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 8500,
+    disableOnInteraction: false,
   },
 });
 
@@ -40,13 +49,13 @@ var swiper = new Swiper(".service__slider", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 2,
+      slidesPerView: 4,
     },
     450: {
-      slidesPerView: 3,
+      slidesPerView: 5,
     },
     991: {
-      slidesPerView: 4,
+      slidesPerView: 6,
     },
   },
 });

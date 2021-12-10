@@ -22,6 +22,7 @@ body {
   font-size: @font-size__base;
   font-weight: @font-weight__base;
   line-height: @line-height__base;
+  overflow-x: hidden;
 }
 
 html {
@@ -153,8 +154,11 @@ header {
 }
 
 .banner {
-  img {
-    width: 100%;
+  &__box {
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -174,10 +178,17 @@ header {
           color: @color-white;
         }
       }
+
       a {
         color: @color-theme__base;
         font-weight: @font-weight__semibold;
         letter-spacing: 0.05px;
+      }
+
+      &:last-child {
+        label {
+          background-color: @color-white;
+        }
       }
     }
 
@@ -351,7 +362,7 @@ header {
 }
 
 .news {
-  margin: 20px 0;
+  margin: 20px 0 114px;
 
   &__slider {
     margin: 20px 20px 0 20px;
@@ -370,6 +381,7 @@ header {
 .footer {
   background: @color-gray-light;
   padding: 0 20px 110px;
+  position: relative;
 
   &__top {
     padding-bottom: 20px;
@@ -389,7 +401,7 @@ header {
     text-align: center;
     font-weight: @font-weight__extrabold;
     margin-bottom: 14px;
-    padding-top: 84px;
+    padding-top: 100px;
 
     i {
       display: block;
@@ -397,7 +409,7 @@ header {
     }
   }
 
-  &__contact {
+  &__app {
     .flex(end, space-between, wrap);
     a {
       .flex(center, space-between, wrap, column);
@@ -431,5 +443,55 @@ header {
   &__license {
     margin-top: 16px;
     display: block;
+  }
+
+  &__contact {
+    position: absolute;
+    background: @color-white;
+    .boder-radius(20px);
+    .box-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
+
+    top: -16%;
+    padding: 20px;
+    left: 20px;
+    right: 20px;
+
+    &-social {
+      .flex(center, center);
+      gap: 10px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    form {
+      .flex(center, space-between, wrap);
+      gap: 10px;
+
+      input {
+        padding: 12.5px 20px;
+        border: 1px solid #e5e5e5;
+        .boder-radius(20px);
+        font-size: @font-size__s;
+
+        flex: 1;
+        font-weight: @font-weight__heavier;
+      }
+
+      a {
+        padding: 11.5px 30px;
+        color: @color-white;
+        text-transform: uppercase;
+        font-weight: @font-weight__semibold;
+
+        line-height: @line-height__m;
+        background: @color-theme__base;
+        display: block;
+        .boder-radius(20px);
+
+        font-size: @font-size__m;
+        cursor: pointer;
+        margin: 0 auto;
+      }
+    }
   }
 }
