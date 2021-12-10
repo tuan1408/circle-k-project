@@ -148,3 +148,29 @@
     border: 0.5px solid @color-yellow;
   }
 }
+// label
+.label(@background-color, @font-weight) {
+  position: absolute;
+  top: 0px;
+  letter-spacing: 0.5px;
+  color: @color-white;
+  background: @background-color;
+  font-weight: @font-weight;
+}
+
+.label-hot {
+  .label(@color-theme__base, @font-weight__bold);
+  width: 30px;
+  height: 30px;
+  .boder-radius(50%);
+  line-height: 30px;
+  left: 82%;
+}
+
+.label-pre {
+  .label(@color-yellow,@font-weight__semibold);
+  padding: 10px 18px;
+  .boder-radius(20px);
+  line-height: @line-height__xs;
+  right: 0;
+}
