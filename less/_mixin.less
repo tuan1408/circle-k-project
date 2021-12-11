@@ -111,18 +111,21 @@
 
 .text-default {
   .text(@color-text__gray, @font-weight__heavier);
+  &:hover {
+    color: @color-theme__base;
+  }
 }
 
 .text-active {
   .text(@color-theme__base, @font-weight__semibold);
 }
 
-.item-default {
-  .item(60px, 60px, @color-white, @color-theme__base);
+.item-default(@height, @width) {
+  .item(@height, @width, @color-white, @color-theme__base);
 }
 
-.item-active {
-  .item(60px, 60px, @color-theme__base, @color-white);
+.item-active(@height, @width) {
+  .item(@height, @width, @color-theme__base, @color-white);
 }
 
 // heading

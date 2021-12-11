@@ -19,3 +19,34 @@
     .see-more();
   }
 }
+
+@media (min-width: 768px) {
+  .news {
+    margin: 20px 8% 90px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .news {
+    margin: 0 135px;
+    margin-bottom: 90px;
+
+    &__heading {
+      .heading-text();
+      font-size: @line-height__l;
+      line-height: 36px;
+
+      span {
+        margin: 0;
+      }
+    }
+
+    &__slider {
+      margin-top: 40px;
+    }
+
+    &__more {
+      margin-top: 40px;
+    }
+  }
+}

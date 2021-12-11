@@ -25,11 +25,46 @@
     }
 
     label {
-      .item-default;
+      .item-default(60px, 60px);
       .box-shadow-default();
     }
     a {
       .text-default;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .category {
+    margin: 20px 8%;
+
+    &__list {
+      a {
+        max-width: 68px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .category {
+    margin: 40px 180px;
+
+    &__list {
+      justify-content: unset;
+      label {
+        .item-default(80px, 80px);
+
+        img {
+          top: 30%;
+        }
+      }
+
+      a {
+        font-weight: @font-weight__semibold;
+        font-size: @font-size__m;
+        line-height: @line-height__l;
+      }
     }
   }
 }

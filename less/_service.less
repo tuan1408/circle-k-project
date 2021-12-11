@@ -22,7 +22,7 @@
     gap: 8px;
     &.active {
       label {
-        .item-active;
+        .item-active(60px, 60px);
       }
       a {
         .text-active();
@@ -30,11 +30,60 @@
     }
 
     label {
-      .item-default();
+      .item-default(60px, 60px);
       .box-shadow-default();
     }
     a {
       .text-default();
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .service {
+    padding: 20px 8% 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .service {
+    padding-top: 40px;
+    margin-bottom: 40px;
+
+    &__heading {
+      .heading-text();
+      font-size: @line-height__l;
+      line-height: 36px;
+      max-width: 880px;
+      margin: 0 auto;
+
+      span {
+        display: none;
+      }
+    }
+
+    &__slider {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    &__list {
+      label {
+        .item-default(80px, 80px);
+
+        img {
+          top: 30%;
+        }
+      }
+      a {
+        .text-default();
+        font-size: @font-size__m;
+        line-height: @line-height__l;
+      }
+    }
+
+    &__more {
+      margin-bottom: 40px;
     }
   }
 }

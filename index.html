@@ -18,10 +18,10 @@
 <body>
     <header>
         <span class="header__menu-top"></span>
-        <div class="header__menu">
-            <img class="header__menu-img" srcset="./image/logo.png 2x" alt="">
 
-            <!-- <div class="header__menu-desk">
+        <div class="header__menu-desk">
+            <img class="header__menu-img" srcset="./image/logo-desk.png 2x" alt="">
+            <div class="menu__desk-main">
                 <a href="#">
                     <img srcset="./image/menu-icon-1.png 2x" alt="">
                     <span>Sản phẩm</span>
@@ -42,7 +42,25 @@
                     <img srcset="./image/icon-job.png 2x" alt="">
                     <span>Việc làm</span>
                 </a>
-            </div> -->
+                <input type="search" placeholder="Địa chỉ nhận hàng" />
+                <a href="#"><img srcset="./image/icon-adr.png 2x" alt=""></a>
+                <a href="#">
+                    <img srcset="./image/icon-search-desk.png 2x" alt="" class="header__menu-search">
+                </a>
+                <a href="">
+                    <img srcset="./image/user-desk-menu.png 2x" alt="">
+                </a>
+                <a href="#">
+                    <img srcset="./image/cart-desk.png 2x" alt="" class="header__menu-cart">
+                </a>
+
+                <a class="language__vi">VI</a>
+                <a class="language__en">EN</a>
+            </div>
+        </div>
+
+        <div class="header__menu">
+            <img class="header__menu-img" srcset="./image/logo.png 2x" alt="">
 
             <div class="header__menu-bars">
                 <a href="#">
@@ -76,19 +94,12 @@
                 <a href="#">
                     <img srcset="./image/icon-search.png 2x" alt="" class="header__menu-search">
                 </a>
-                <!-- <a href="">
-                    <img src="./image/user-desk-menu.png" alt="">
-                </a> -->
+                
                 <a href="#">
                     <img srcset="./image/cart.png 2x" alt="" class="header__menu-cart">
                     <span>0</span>
                 </a>
             </div>
-
-            <!-- <div class="header__menu-language">
-                <button>VI</button>
-                <button>EN</button>
-            </div> -->
         </div>
     </header>
 
@@ -241,7 +252,7 @@
 
     </section>
 
-    <section class="product">
+    <section class="product product__hot">
         <div class="product__heading">
             <h2>SẢN PHẨM BÁN CHẠY</h2>
             <span></span>
@@ -406,11 +417,22 @@
         <div class="footer__contact">
             <div class="footer__contact-social">
                 <a><img srcset="./image/logo-bottom.png 2x" alt=""></a>
+                <h3 class="footer__contact-follow">
+                    THEO DÕI CIRCLE K
+                    <span>Cập nhận ưu đãi sớm nhất</span>
+                </h3>
+                <form action="" class="footer__contact-desk">
+                    <input class="input-desk" type="email" placeholder="Email của bạn">
+                    <a>Xác nhận</a>
+                </form>
+
+                <span></span>
+
                 <a><img srcset="./image/fb.png 2x" alt=""></a>
                 <a><img srcset="./image/youtube.png 2x" alt=""></a>
                 <a><img srcset="./image/email.png 2x" alt=""></a>
             </div>
-            <form action="">
+            <form action="" class="form-mobile">
                 <input type="email" placeholder="Email của bạn">
                 <a>Xác nhận</a>
             </form>
@@ -420,46 +442,53 @@
             <h3 class="footer__title">Circle K Vietnam
                 <i>Chuỗi cửa hàng tiện lợi - Mở cửa 24/7</i>
             </h3>
-            <p>CÔNG TY TNHH VÒNG TRÒN ĐỎ - Giấy CNĐKDN : 0306182043</p>
-            <p>Địa chỉ: 160 Bùi Thị Xuân, Phường Phạm Ngũ Lão, Quận 1, Tp.Hồ Chí Minh, Việt Nam</p>
-            <p>Hotline: 1900 3110 (7:00-22:00)</p>
-            <p>Email: info@circlek.com.vn</p>
-            <div class="footer__app">
-                <img srcset="./image/footer-img-1.png 2x" alt="">
-                <a>
-                    <img srcset="./image/app-store.png 2x" alt="">
-                    <img srcset="./image/ch-play.png 2x" alt="">
-                </a>
-                <img srcset="./image/notify.png 2x" alt="">
+            <div class="footer__content">
+                <div class="footer__content-text" >
+                    <p>CÔNG TY TNHH VÒNG TRÒN ĐỎ - Giấy CNĐKDN : 0306182043</p>
+                    <p>Địa chỉ: 160 Bùi Thị Xuân, Phường Phạm Ngũ Lão, Quận 1, Tp.Hồ Chí Minh, Việt Nam</p>
+                    <p>Hotline: 1900 3110 (7:00-22:00)</p>
+                    <p>Email: info@circlek.com.vn</p>
+                </div>
+
+                <div class="footer__app">
+                    <img srcset="./image/footer-img-1.png 2x" alt="">
+                    <a>
+                        <img srcset="./image/app-store.png 2x" alt="">
+                        <img srcset="./image/ch-play.png 2x" alt="">
+                    </a>
+                    <img srcset="./image/notify.png 2x" alt="">
+                </div>
             </div>
         </div>
-        <ul class="footer__bottom">
-            <li>
-                <a href="#">Giới Thiệu</a>
-            </li>
-            <span></span>
-            <li>
-                <a href="#">Cơ hội nghề nghiệp</a>
-            </li>
-            <span></span>
-            <li>
-                <a href="#"> Tin tức & sự kiện</a>
-            </li>
-            <span></span>
-            <li>
-                <a href="#">Liên hệ</a>
-            </li>
-            <span></span>
-            <li>
-                <a href="#">Điều khoản sự dụng</a>
-            </li>
-            <span></span>
-            <li>
-                <a href="#">Chính sách bảo mật</a>
-            </li>
-        </ul>
-
-        <span class="footer__license">Copyright © 2021 Circle K Vietnam</span>
+        <div class="footer__intro">
+            <ul class="footer__bottom">
+                <li>
+                    <a href="#">Giới Thiệu</a>
+                </li>
+                <span></span>
+                <li>
+                    <a href="#">Cơ hội nghề nghiệp</a>
+                </li>
+                <span></span>
+                <li>
+                    <a href="#"> Tin tức & sự kiện</a>
+                </li>
+                <span></span>
+                <li>
+                    <a href="#">Liên hệ</a>
+                </li>
+                <span></span>
+                <li>
+                    <a href="#">Điều khoản sự dụng</a>
+                </li>
+                <span></span>
+                <li>
+                    <a href="#">Chính sách bảo mật</a>
+                </li>
+            </ul>
+    
+            <span class="footer__license">Copyright © 2021 Circle K Vietnam</span>
+        </div>
     </footer>
 
     <a class="club" href="#">

@@ -52,3 +52,59 @@
     .see-more();
   }
 }
+
+@media (min-width: 768px) {
+  .product {
+    margin: 20px 8%;
+
+    &__slider {
+      &-pre,
+      &-hot {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .product {
+    margin: 0 8% 40px;
+
+    .product__hot {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .product {
+    margin: 0 120px 40px;
+
+    &__heading {
+      .heading-text();
+      font-size: @line-height__l;
+      line-height: 36px;
+    }
+
+    &__slider {
+      margin: 0 0 40px;
+      &-pre,
+      &-hot {
+        display: none;
+      }
+
+      &-box {
+        img {
+          min-width: 300px;
+          min-height: 246px;
+          object-fit: cover;
+        }
+
+        a {
+          font-size: @font-size__m;
+          line-height: @line-height__m;
+        }
+      }
+    }
+  }
+}

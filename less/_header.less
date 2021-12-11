@@ -5,6 +5,10 @@ header {
     display: block;
   }
 
+  .header__menu-desk {
+    display: none;
+  }
+
   .header__menu {
     margin: 0 20px;
     .flex(center, space-between);
@@ -106,6 +110,135 @@ header {
           left: 16px;
           font-size: 6px;
           font-weight: @font-weight__heavier;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  header {
+    .header__menu {
+      &-bars {
+        display: none !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    .header__menu-top {
+      display: none;
+    }
+
+    .header__menu-desk {
+      .flex(center, center);
+      height: 65px;
+
+      .header__menu-img {
+        background: @color-theme__base;
+        margin: 0;
+        position: absolute;
+        left: 60px;
+
+        top: 0;
+      }
+
+      .menu__desk-main {
+        background: white;
+        .flex(center, space-between);
+        height: 80px;
+        gap: 16px;
+
+        top: 0;
+        position: absolute;
+        left: 260px;
+        right: 60px;
+        padding: 20px 20px 20px 20px;
+
+        a {
+          text-align: center;
+          &:first-child,
+          &:nth-child(4) {
+            span {
+              margin-top: 10px;
+            }
+          }
+        }
+        .language__en,
+        .language__vi {
+          cursor: pointer;
+          font-size: @font-size__s;
+          line-height: @line-height__base;
+          font-weight: @font-weight__heavier;
+        }
+
+        .language__vi {
+          color: @color-theme__base;
+
+          &::before {
+            content: "";
+            position: absolute;
+            height: 20px;
+            width: 1px;
+
+            background: #9a9a9a;
+            top: 30px;
+            right: 50px;
+          }
+        }
+
+        input {
+          text-transform: none;
+          line-height: 15px;
+          .border(1px, #E5E5E5);
+          .boder-radius(20px);
+
+          width: 240px;
+          height: 40px;
+          padding-left: 20px;
+          font-size: @font-size__s;
+
+          font-weight: @font-weight__heavier;
+        }
+
+        form {
+          .flex(center, space-between);
+        }
+
+        span {
+          margin-top: 5px;
+          display: block;
+          font-size: @font-size__s;
+          .text-default();
+        }
+      }
+    }
+
+    .header__menu {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    .header__menu-desk {
+      .header__menu-img {
+        left: 120px;
+      }
+
+      .menu__desk-main {
+        padding: 20px 20px 20px 42px;
+        left: 320px;
+        right: 120px;
+
+        input {
+          margin-left: 50px;
+        }
+
+        span {
+          font-size: @font-size__s;
         }
       }
     }
