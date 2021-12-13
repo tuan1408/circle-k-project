@@ -352,14 +352,6 @@ header .header__menu-shop a:nth-child(2) span {
   gap: 20px;
   list-style: none;
 }
-.category__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 8px;
-}
 .category__list.active label {
   background-color: #ee2e24;
 }
@@ -389,12 +381,14 @@ header .header__menu-shop a:nth-child(2) span {
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  top: 20%;
+  bottom: 20%;
   color: #ee2e24;
 }
 .category__list a {
   font-weight: 500;
   color: #333333;
+  margin-top: 8px;
+  display: block;
 }
 .category__list a:hover {
   color: #ee2e24;
@@ -402,9 +396,6 @@ header .header__menu-shop a:nth-child(2) span {
 @media (min-width: 768px) {
   .category {
     margin: 20px 8%;
-  }
-  .category__list a {
-    max-width: 68px;
   }
 }
 @media (min-width: 1440px) {
@@ -427,7 +418,7 @@ header .header__menu-shop a:nth-child(2) span {
     position: absolute;
     right: 50%;
     transform: translateX(50%);
-    top: 20%;
+    bottom: 20%;
     color: #ee2e24;
   }
   .category__list label img {
@@ -499,8 +490,8 @@ header .header__menu-shop a:nth-child(2) span {
   position: relative;
 }
 .product__slider-box img {
-  min-height: 160px;
-  min-width: 170px;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .product__slider-box a {
@@ -618,7 +609,6 @@ header .header__menu-shop a:nth-child(2) span {
 .service__slider {
   padding-top: 30px;
   text-align: center;
-  margin: 0 20px;
 }
 .service__more {
   margin: 20px 0;
@@ -662,7 +652,7 @@ header .header__menu-shop a:nth-child(2) span {
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  top: 20%;
+  bottom: 20%;
   color: #ffffff;
 }
 .service__list.active a {
@@ -685,7 +675,7 @@ header .header__menu-shop a:nth-child(2) span {
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  top: 20%;
+  bottom: 20%;
   color: #ee2e24;
 }
 .service__list a {
@@ -747,7 +737,7 @@ header .header__menu-shop a:nth-child(2) span {
     position: absolute;
     right: 50%;
     transform: translateX(50%);
-    top: 20%;
+    bottom: 20%;
     color: #ee2e24;
   }
   .service__list label img {

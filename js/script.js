@@ -7,11 +7,9 @@ var swiper = new Swiper(".product__slider", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 1,
-    },
-    414: {
       slidesPerView: 2.5,
     },
+
     768: {
       slidesPerView: 3.5,
     },
@@ -50,7 +48,7 @@ var swiper = new Swiper(".service__slider", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 3,
+      slidesPerView: 4.5,
     },
     414: {
       slidesPerView: 4.5,
