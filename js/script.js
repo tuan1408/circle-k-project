@@ -1,19 +1,23 @@
 var swiper = new Swiper(".product__slider", {
-  loop: true,
+  initialSlide: 0,
+  spaceBetween: 20,
   grabCursor: true,
-  autoplay: {
-    delay: 8500,
-    disableOnInteraction: false,
+  grid: {
+    rows: 2,
   },
+
+  // autoplay: {
+  //   delay: 500,
+  //   disableOnInteraction: false,
+  // },
   breakpoints: {
     0: {
       slidesPerView: 2.5,
     },
-
     768: {
       slidesPerView: 3.5,
     },
-    1200: {
+    1024: {
       slidesPerView: 4,
     },
   },
@@ -53,8 +57,13 @@ var swiper = new Swiper(".service__slider", {
     414: {
       slidesPerView: 4.5,
     },
-    1200: {
+    768: {
+      slidesPerView: 5.5,
+      spaceBetween: 20,
+    },
+    1024: {
       slidesPerView: 6,
+      spaceBetween: 20,
     },
   },
 });
@@ -63,10 +72,10 @@ var swiper = new Swiper(".news__slider", {
   spaceBetween: 20,
   loop: true,
   grabCursor: true,
-  autoplay: {
-    delay: 8500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 8500,
+  //   disableOnInteraction: false,
+  // },
   breakpoints: {
     0: {
       slidesPerView: 1,

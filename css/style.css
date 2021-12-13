@@ -338,11 +338,11 @@ header .header__menu-shop a:nth-child(2) span {
 }
 .banner__box img {
   width: 100%;
-  height: 100%;
+  max-height: 420px;
 }
 .sub-slider__box img {
   width: 100%;
-  height: 100%;
+  max-height: 420px;
 }
 .category {
   margin: 20px 20px 30px;
@@ -452,11 +452,17 @@ header .header__menu-shop a:nth-child(2) span {
   display: block;
   border: 0.5px solid #f99b2a;
 }
+.product__heading h2 {
+  color: #000000;
+}
 .product__slider {
   overflow: hidden;
   text-align: center;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 24px;
+}
+.product__slider .swiper-wrapper {
+  flex-direction: row;
 }
 .product__slider-hot {
   position: absolute;
@@ -488,6 +494,7 @@ header .header__menu-shop a:nth-child(2) span {
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-top: 0 !important;
 }
 .product__slider-box img {
   height: 100%;
@@ -535,24 +542,28 @@ header .header__menu-shop a:nth-child(2) span {
     display: none;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .product {
     margin: 0 8% 40px;
   }
-  .product .product__hot {
+  .product__slider {
+    margin-top: 0;
+  }
+  .product__slider-box {
+    margin-top: 0 !important;
+  }
+  .product__slider img {
+    height: 246px;
+  }
+  .product.product__hot {
     display: none;
   }
-}
-@media (min-width: 1440px) {
-  .product {
-    margin: 0 120px 40px;
-  }
-  .product__heading {
+  .product__heading h2 {
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 36px;
   }
-  .product__heading h2 {
+  .product__heading h2 h2 {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
@@ -561,14 +572,36 @@ header .header__menu-shop a:nth-child(2) span {
     display: inline-block;
     border-bottom: 3px solid #ee2e24;
   }
-  .product__heading span {
+  .product__heading h2 span {
     margin: 0 20px;
     height: 0px;
     display: block;
     border: 0.5px solid #f99b2a;
   }
-  .product__slider {
-    margin: 0 0 40px;
+}
+@media (min-width: 1440px) {
+  .product {
+    margin: 0 120px 40px;
+  }
+  .product__heading h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .product__heading h2 h2 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    padding-bottom: 8px;
+    display: inline-block;
+    border-bottom: 3px solid #ee2e24;
+  }
+  .product__heading h2 span {
+    margin: 0 20px;
+    height: 0px;
+    display: block;
+    border: 0.5px solid #f99b2a;
   }
   .product__slider-pre,
   .product__slider-hot {
@@ -586,7 +619,7 @@ header .header__menu-shop a:nth-child(2) span {
 }
 .service {
   background: #f4f4f4;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 .service__heading {
   text-align: center;
@@ -611,7 +644,7 @@ header .header__menu-shop a:nth-child(2) span {
   text-align: center;
 }
 .service__more {
-  margin: 20px 0;
+  margin-top: 20px;
   color: #ffffff;
   background-color: #ee2e24;
   padding: 10px 30px;
@@ -687,22 +720,21 @@ header .header__menu-shop a:nth-child(2) span {
 }
 @media (min-width: 768px) {
   .service {
-    padding: 20px 8% 0;
+    padding: 20px 8%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .service {
-    padding-top: 40px;
-    margin-bottom: 40px;
+    padding: 40px 20%;
   }
-  .service__heading {
+  .service__heading h2 {
     text-align: center;
     font-size: 20px;
     line-height: 36px;
     max-width: 880px;
     margin: 0 auto;
   }
-  .service__heading h2 {
+  .service__heading h2 h2 {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
@@ -711,7 +743,7 @@ header .header__menu-shop a:nth-child(2) span {
     display: inline-block;
     border-bottom: 3px solid #ee2e24;
   }
-  .service__heading span {
+  .service__heading h2 span {
     margin: 0 20px;
     height: 0px;
     display: block;
@@ -752,17 +784,14 @@ header .header__menu-shop a:nth-child(2) span {
   .service__list a:hover {
     color: #ee2e24;
   }
-  .service__more {
-    margin-bottom: 40px;
-  }
 }
 .news {
   margin: 20px 0 114px;
 }
-.news__heading {
+.news__heading h2 {
   text-align: center;
 }
-.news__heading h2 {
+.news__heading h2 h2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
@@ -771,7 +800,7 @@ header .header__menu-shop a:nth-child(2) span {
   display: inline-block;
   border-bottom: 3px solid #ee2e24;
 }
-.news__heading span {
+.news__heading h2 span {
   margin: 0 20px;
   height: 0px;
   display: block;
@@ -809,17 +838,16 @@ header .header__menu-shop a:nth-child(2) span {
     margin: 20px 8% 90px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .news {
-    margin: 0 135px;
-    margin-bottom: 90px;
+    margin: 40px 105px 90px 135px;
   }
-  .news__heading {
+  .news__heading h2 {
     text-align: center;
     font-size: 20px;
     line-height: 36px;
   }
-  .news__heading h2 {
+  .news__heading h2 h2 {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
@@ -828,7 +856,7 @@ header .header__menu-shop a:nth-child(2) span {
     display: inline-block;
     border-bottom: 3px solid #ee2e24;
   }
-  .news__heading span {
+  .news__heading h2 span {
     margin: 0 20px;
     height: 0px;
     display: block;
@@ -923,11 +951,24 @@ header .header__menu-shop a:nth-child(2) span {
 .footer__contact-follow {
   display: none;
 }
+.footer__contact-icon > a {
+  height: 35px;
+  width: 35px;
+  background-color: #f99b2a;
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+}
+.footer__contact-icon > a i {
+  font-size: 14px;
+  line-height: 35px;
+}
 .footer__contact-social {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 10px;
   margin-bottom: 20px;
@@ -936,10 +977,8 @@ header .header__menu-shop a:nth-child(2) span {
 .footer__contact-social > span {
   display: none;
 }
-.footer__contact-social .footer__contact-desk {
-  display: none;
-}
 .footer__contact form {
+  order: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -985,10 +1024,13 @@ header .header__menu-shop a:nth-child(2) span {
     top: -12%;
   }
   .footer__contact form {
-    gap: 10px;
+    gap: 20px;
   }
   .footer__contact form a {
     padding: 10px 26px;
+  }
+  .footer__contact-icon > a {
+    margin: 0 5px;
   }
   .footer__content {
     display: flex;
@@ -1010,17 +1052,14 @@ header .header__menu-shop a:nth-child(2) span {
   .footer__contact {
     margin: 0 8%;
   }
-  .footer__contact .form-mobile {
-    gap: 20px;
-  }
-  .footer__contact .form-mobile input {
-    flex: 2;
+  .footer__contact-icon > a {
+    margin: 0 5px;
   }
   .footer__content {
     flex-wrap: nowrap;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .footer {
     padding: 0;
   }
@@ -1072,55 +1111,45 @@ header .header__menu-shop a:nth-child(2) span {
     gap: 10px;
     margin-bottom: 0;
   }
+  .footer__contact-social form {
+    order: 0;
+    gap: 10px;
+  }
   .footer__contact-social > span {
     display: block;
     height: 60px;
     border-right: 0.5px solid #9a9a9c;
   }
-  .footer__contact-social a:first-child img {
-    width: 140px;
-    height: 50px;
-  }
-  .footer__contact-social .footer__contact-desk {
-    display: block;
-    gap: 20px;
-  }
-  .footer__contact-social .footer__contact-desk .input-desk {
-    width: 252px;
+  .footer__contact-icon > a:first-child {
+    margin-left: 0;
   }
   .footer__contact-follow {
     display: block;
     color: #ee2e24;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
   }
   .footer__contact-follow span {
     display: block;
     color: #333333;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 18px;
     margin-top: 5px;
-  }
-  .footer__contact .form-mobile {
-    display: none;
   }
 }
 @media (min-width: 1440px) {
   .footer__contact {
     margin: 0 180px;
   }
-  .footer__contact-social a:first-child img {
-    width: 160px;
-    height: 60px;
-  }
   .footer__contact-social > span {
     margin-right: 10px;
   }
   .footer__contact-follow {
+    font-size: 18px;
     margin: 0 10px 0 20px;
   }
-  .footer__contact-desk a {
-    margin: 0 10px 0 10px;
+  .footer__contact-follow span {
+    font-size: 14px;
   }
 }
 .club {

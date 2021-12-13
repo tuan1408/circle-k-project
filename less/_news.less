@@ -2,7 +2,9 @@
   margin: 20px 0 114px;
 
   &__heading {
-    .heading-text();
+    h2 {
+      .heading-text();
+    }
   }
 
   &__slider {
@@ -26,15 +28,16 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .news {
-    margin: 0 135px;
-    margin-bottom: 90px;
+    margin: 40px 105px 90px 135px;
 
     &__heading {
-      .heading-text();
-      font-size: @line-height__l;
-      line-height: 36px;
+      h2 {
+        .heading-text();
+        font-size: @line-height__l;
+        line-height: 36px;
+      }
 
       span {
         margin: 0;

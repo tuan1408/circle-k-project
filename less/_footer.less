@@ -81,8 +81,25 @@
     display: none;
   }
 
+  &-icon {
+    & > a {
+      height: 35px;
+      width: 35px;
+      background-color: @color-yellow;
+      color: @color-white;
+
+      border-radius: 50%;
+      text-align: center;
+      display: inline-block;
+      i {
+        font-size: @font-size__m;
+        line-height: 35px;
+      }
+    }
+  }
+
   &-social {
-    .flex(center, center);
+    .flex(center, center, wrap);
     gap: 10px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -90,13 +107,10 @@
     & > span {
       display: none;
     }
-
-    .footer__contact-desk {
-      display: none;
-    }
   }
 
   form {
+    order: 1;
     .flex(center, space-between, wrap);
     gap: 20px;
     input {
@@ -129,10 +143,16 @@
   .footer__contact {
     top: -12%;
     form {
-      gap: 10px;
+      gap: 20px;
 
       a {
         padding: 10px 26px;
+      }
+    }
+
+    &-icon {
+      & > a {
+        margin: 0 5px;
       }
     }
   }
@@ -154,10 +174,9 @@
   .footer__contact {
     margin: 0 8%;
 
-    .form-mobile {
-      gap: 20px;
-      input {
-        flex: 2;
+    &-icon {
+      & > a {
+        margin: 0 5px;
       }
     }
   }
@@ -166,7 +185,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .footer {
     padding: 0;
     &__top {
@@ -215,45 +234,37 @@
       gap: 10px;
       margin-bottom: 0;
 
+      form {
+        order: 0;
+        gap: 10px;
+      }
+
       & > span {
         display: block;
         height: 60px;
         border-right: 0.5px solid #9a9a9c;
       }
+    }
 
-      a:first-child {
-        img {
-          width: 140px;
-          height: 50px;
-        }
-      }
-
-      .footer__contact-desk {
-        display: block;
-        gap: 20px;
-        .input-desk {
-          width: 252px;
-        }
+    &-icon {
+      & > a:first-child {
+        margin-left: 0;
       }
     }
 
     &-follow {
       display: block;
       color: @color-theme__base;
-      font-size: @font-size__l;
+      font-size: @font-size__m;
       font-weight: @font-weight__semibold;
 
       span {
         display: block;
         color: @color-text__gray;
-        font-size: @font-size__m;
+        font-size: @font-size__s;
         line-height: @line-height__m;
         margin-top: 5px;
       }
-    }
-
-    .form-mobile {
-      display: none;
     }
   }
 }
@@ -263,25 +274,16 @@
     margin: 0 180px;
 
     &-social {
-      a:first-child {
-        img {
-          width: 160px;
-          height: 60px;
-        }
-      }
-
       & > span {
         margin-right: 10px;
       }
     }
 
     &-follow {
+      font-size: @font-size__l;
       margin: 0 10px 0 20px;
-    }
-
-    &-desk {
-      a {
-        margin: 0 10px 0 10px;
+      span {
+        font-size: @font-size__m;
       }
     }
   }
