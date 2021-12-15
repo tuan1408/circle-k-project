@@ -5,7 +5,7 @@ var swiper = new Swiper(".product__slider", {
   grid: {
     rows: 2,
   },
-  loop: true,
+  // loop: true,
   // autoplay: {
   //   delay: 500,
   //   disableOnInteraction: false,
