@@ -125,7 +125,7 @@ header {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   header {
     .header__menu-top {
       display: none;
@@ -139,22 +139,33 @@ header {
         background: @color-theme__base;
         margin: 0;
         position: absolute;
-        left: 60px;
+        // left: 60px;
+        left: 10px;
 
-        top: 0;
+        // top: 0;
+        top: -1px;
       }
 
       .menu__desk-main {
         background: white;
         .flex(center, space-between);
         height: 80px;
-        gap: 16px;
+        // gap: 16px;
+        gap: 10px;
 
         top: 0;
         position: absolute;
-        left: 260px;
-        right: 60px;
+        // left: 260px;
+        // right: 60px;
+        left: 200px;
+        right: 10px;
         padding: 20px 20px 20px 20px;
+
+        & > span {
+          height: 20px;
+          border-right: 1px solid @color-border;
+          margin: 0;
+        }
 
         a {
           text-align: center;
@@ -175,17 +186,6 @@ header {
 
         .language__vi {
           color: @color-theme__base;
-
-          &::before {
-            content: "";
-            position: absolute;
-            height: 20px;
-            width: 1px;
-
-            background: #9a9a9a;
-            top: 30px;
-            right: 50px;
-          }
         }
 
         input {
@@ -194,7 +194,7 @@ header {
           .border(1px, #E5E5E5);
           .boder-radius(20px);
 
-          width: 240px;
+          // width: 240px;
           height: 40px;
           padding-left: 20px;
           font-size: @font-size__s;
@@ -234,7 +234,8 @@ header {
         right: 120px;
 
         input {
-          margin-left: 50px;
+          // margin-left: 50px;
+          width: 240px;
         }
 
         span {

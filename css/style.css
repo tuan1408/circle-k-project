@@ -228,7 +228,7 @@ header .header__menu-shop a:nth-child(2) span {
     display: none !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   header .header__menu-top {
     display: none;
   }
@@ -244,8 +244,8 @@ header .header__menu-shop a:nth-child(2) span {
     background: #ee2e24;
     margin: 0;
     position: absolute;
-    left: 60px;
-    top: 0;
+    left: 10px;
+    top: -1px;
   }
   header .header__menu-desk .menu__desk-main {
     background: white;
@@ -255,12 +255,17 @@ header .header__menu-shop a:nth-child(2) span {
     flex-wrap: nowrap;
     flex-direction: row;
     height: 80px;
-    gap: 16px;
+    gap: 10px;
     top: 0;
     position: absolute;
-    left: 260px;
-    right: 60px;
+    left: 200px;
+    right: 10px;
     padding: 20px 20px 20px 20px;
+  }
+  header .header__menu-desk .menu__desk-main > span {
+    height: 20px;
+    border-right: 1px solid #9a9a9c;
+    margin: 0;
   }
   header .header__menu-desk .menu__desk-main a {
     text-align: center;
@@ -279,21 +284,11 @@ header .header__menu-shop a:nth-child(2) span {
   header .header__menu-desk .menu__desk-main .language__vi {
     color: #ee2e24;
   }
-  header .header__menu-desk .menu__desk-main .language__vi::before {
-    content: "";
-    position: absolute;
-    height: 20px;
-    width: 1px;
-    background: #9a9a9a;
-    top: 30px;
-    right: 50px;
-  }
   header .header__menu-desk .menu__desk-main input {
     text-transform: none;
     line-height: 15px;
     border: 1px solid #E5E5E5;
     border-radius: 20px;
-    width: 240px;
     height: 40px;
     padding-left: 20px;
     font-size: 12px;
@@ -330,7 +325,7 @@ header .header__menu-shop a:nth-child(2) span {
     right: 120px;
   }
   header .header__menu-desk .menu__desk-main input {
-    margin-left: 50px;
+    width: 240px;
   }
   header .header__menu-desk .menu__desk-main span {
     font-size: 12px;
